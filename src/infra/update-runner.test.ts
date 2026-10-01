@@ -61,6 +61,7 @@ describe("update install surface and command ownership", () => {
         env: { OPENCLAW_UPDATE_TEST_ENV: "1" },
         killProcessTree: true,
         timeoutMs: 500,
+        input: "",
       });
     } finally {
       vi.doUnmock("../process/exec.js");
